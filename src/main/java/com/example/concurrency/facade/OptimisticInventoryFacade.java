@@ -1,9 +1,11 @@
 package com.example.concurrency.facade;
 
 import com.example.concurrency.service.OptimisticInventoryService;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
+@AllArgsConstructor
 public class OptimisticInventoryFacade {
 
     // 파사드 클래스의 역할은 낙관적락 서비스가 기각되었을 때 호출이 반영될 때까지 지속적으로 재시도 하도록 만드는 것이다.
